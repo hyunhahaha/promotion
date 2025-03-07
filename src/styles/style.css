@@ -55,3 +55,14 @@
     left: 1057px;
     top: 1322px;
 }
+
+
+.loading_box {
+    position: absolute;
+    top: 1424px;  /* 시작 위치 */
+    left: 1094px;  /* 시작 위치 */
+    background-color: greenyellow;
+    width: 0;  /* 초기 width */
+    height: 28px;  /* 초기 height */
+    transition: width 1s ease;  /* width 애니메이션 */
+}

@@ -13,6 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+//텍스트 샤라락 블러
+
 ScrollTrigger.create({
   trigger: ".section01",  // 트리거 요소
   start: "1px top",  // 스크롤 시작 위치
@@ -33,7 +35,7 @@ ScrollTrigger.create({
       duration: .2  // 애니메이션 지속 시간
     }
   ),
-  markers: true,
+  // markers: true,
   scrub: true,  // 스크롤에 맞춰 애니메이션 진행
 });
 
@@ -59,7 +61,7 @@ ScrollTrigger.create({
       duration: .2  // 애니메이션 지속 시간
     }
   ),
-  markers: true,
+  // markers: true,
   scrub: true,  // 스크롤에 맞춰 애니메이션 진행
 });
 
@@ -85,7 +87,7 @@ ScrollTrigger.create({
       duration: .2  // 애니메이션 지속 시간
     }
   ),
-  markers: true,
+  // markers: true,
   scrub: true,  // 스크롤에 맞춰 애니메이션 진행
 });
 
@@ -111,9 +113,26 @@ ScrollTrigger.create({
       duration: .2  // 애니메이션 지속 시간
     }
   ),
-  markers: true,
+  // markers: true,
   scrub: true,  // 스크롤에 맞춰 애니메이션 진행
 });
+
+
+
+
+
+ScrollTrigger.create({
+  trigger: ".section01",
+  start: "660px top",  // 스크롤 시작 위치
+  end: "1000px top",  // 끝 위치
+  markers:true,
+  animation: gsap.to('.loading_box', { 
+    scale: 1,              // 로딩 박스의 스케일을 1로 설정
+    ease: "none",          // 애니메이션 속도
+  }),
+  scrub: true,
+});
+
 
 
 
