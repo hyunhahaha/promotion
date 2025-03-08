@@ -20,16 +20,23 @@
 
 .section01_container .bg_full{
     position: relative;
+
+    img{
+        width: 100%;
+    }
 }
 
 .section01_container .text_01{
     position: absolute;
-    left: 1162px;
-    top: 346px;
-    translate:-50% -50%;
+    left: 59vw;
+    top: 7vw;
+    width: 30vw;
     /* opacity: 0;
     visibility: hidden;
     z-index: 10; */
+    img{
+        width: 100%;
+    }
 }
 
 .section01_container .text_02{
@@ -74,7 +81,7 @@
     top: 1424px;  /* 시작 위치 */
     left: 1094px;  /* 시작 위치 */
     background-color: greenyellow;
-    width: 0;  /* 초기 width */
+    width: 300px;  /* 초기 width */
     height: 28px;  /* 초기 height */
     transition: width 1s ease;  /* width 애니메이션 */
 }
