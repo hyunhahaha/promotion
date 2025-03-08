@@ -80,6 +80,41 @@
 }
 
 
+.phone_01{
+    position: absolute;
+    top: 1818px;
+    left: -119px;
+}
+
+
+.phone_02{
+    position: absolute;
+    top: 2402px;
+    right: -43px;
+}
+
+
+.key_concept{
+    position: absolute;
+    left: 50%;
+    top: 186%;
+    translate:-50% 0;
+}
+
+
+.key_concept_text{
+position: absolute;
+left: 50%;
+top: 194%;
+translate:-50% 0;
+}
+
+
+
+
+
+
+
 
 .section02_container .bg_full_2{
     position: relative;
