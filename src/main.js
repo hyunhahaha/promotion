@@ -40,18 +40,48 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 
 
+//최상단 텍스트
+const 섹션1 = gsap.timeline();
+
+섹션1.from('.t_boxes',{y:50,opacity:0})
+
+
+ScrollTrigger.create({
+  trigger: ".section01",
+  start: "top top",  // 스크롤 시작 위치
+  end: "800px center",  // 끝 위치
+  // markers:true,
+  animation: 섹션1,
+  scrub: true,
+});
+
+
+
+//phone
+const p_box = gsap.timeline();
+
+p_box.from('.p_boxes',{y:50,opacity:0})
+
+ScrollTrigger.create({
+  trigger: ".section01",
+  start: "1000px top",  // 스크롤 시작 위치
+  end: "2500px center",  // 끝 위치
+  // markers:true,
+  animation: p_box,
+  scrub: true,
+});
 
 
 
 
-
+//로딩박스
 ScrollTrigger.create({
   trigger: ".section01",
   start: "660px top",  // 스크롤 시작 위치
   end: "1000px top",  // 끝 위치
   // markers:true,
   animation: gsap.to('.loading_box', { 
-    width: 0,             // 로딩 박스의 스케일을 1로 설정
+    width: 169,             // 로딩 박스의 스케일을 1로 설정
     ease: "none",          // 애니메이션 속도
   }),
   scrub: true,
@@ -59,19 +89,45 @@ ScrollTrigger.create({
 
 
 
+//파란박스
 const 현하 = gsap.timeline();
 
-현하.from('.boxes',{stagger:0.1,y:300,opacity:0})
-현하.from('.solution_01',{rotation:360})
+현하.from('.boxes',{stagger:0.1,opacity:0})
+현하.from('.s_boxes',{stagger:0.1,y:100,opacity:0})
 
 ScrollTrigger.create({
   trigger: ".section02",
   start: "top top",  // 스크롤 시작 위치
-  end: "bottom center",  // 끝 위치
-  markers:true,
+  end: "500px center",  // 끝 위치
+  // markers:true,
   animation: 현하,
-  scrub: true,
+  scrub: 8,
 });
+
+
+
+//컨셉박스
+const 컨셉박스 = gsap.timeline();
+
+컨셉박스.from('.key',{stagger:0.1,opacity:0})
+
+ScrollTrigger.create({
+  trigger: ".section02",
+  start: "1200px top",  // 스크롤 시작 위치
+  end: "1300px center",  // 끝 위치
+  markers:true,
+  animation: 컨셉박스,
+  scrub: 8,
+});
+
+
+
+
+
+
+
+
+
 
 
 
