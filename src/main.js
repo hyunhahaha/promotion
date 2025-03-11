@@ -60,7 +60,8 @@ ScrollTrigger.create({
 //phone
 const p_box = gsap.timeline();
 
-p_box.from('.p_boxes',{y:50,opacity:0})
+p_box.from('.p_boxes1',{y:50,opacity:0})
+p_box.from('.p_boxes2',{y:50,opacity:0})
 
 ScrollTrigger.create({
   trigger: ".section01",
@@ -92,7 +93,7 @@ ScrollTrigger.create({
 //파란박스
 const 현하 = gsap.timeline();
 
-현하.from('.boxes',{stagger:0.1,opacity:0})
+현하.from('.boxes',{stagger:0.1,y:100,opacity:0})
 현하.from('.s_boxes',{stagger:0.1,y:100,opacity:0})
 
 ScrollTrigger.create({
@@ -115,8 +116,24 @@ ScrollTrigger.create({
   trigger: ".section02",
   start: "1200px top",  // 스크롤 시작 위치
   end: "1300px center",  // 끝 위치
-  markers:true,
+  // markers:true,
   animation: 컨셉박스,
+  scrub: 8,
+});
+
+
+
+//섹션3 텍스트
+const 섹션3 = gsap.timeline();
+
+섹션3.from('.text03',{stagger:0.1,y:50,opacity:0})
+
+ScrollTrigger.create({
+  trigger: ".section03",
+  start: "1200px top",  // 스크롤 시작 위치
+  end: "1600px center",  // 끝 위치
+  markers:true,
+  animation: 섹션3,
   scrub: 8,
 });
 

@@ -115,28 +115,6 @@
 
 
 
-/* .concept{
-    position: absolute;
-    left: 55vw;
-    top: 68.7vw;
-    width: 13.5vw;
-    img{
-        width: 100%;
-    }
-} */
-
-/* 
-.concept_text{
-position: absolute;
-left: 50%;
-top: 194%;
-translate:-50% 0;
-} */
-
-
-
-
-
 
 
 
@@ -148,6 +126,7 @@ translate:-50% 0;
 
 .section02{
     position: relative;
+    height: 2330px;
 }
 
 
@@ -157,7 +136,7 @@ translate:-50% 0;
     gap: 70px;
     position: absolute;
     left: 50%;
-    top: 70.5%;
+    top: 31.1%;
     translate:-50% -50%;
 
 }
@@ -168,7 +147,7 @@ translate:-50% 0;
     gap: 70px;
     position: absolute;
     left: 50%;
-    top: 112%;
+    top: 49.4%;
     translate:-50% -50%;
 }
 
@@ -179,7 +158,110 @@ translate:-50% 0;
     gap: 55px;
     position: absolute;
     left: 50%;
-    top: 196%;
+    top: 86.3%;
     transform: translate(-50%, -50%); /* 정확히 중앙에 배치 */
     align-items: center; /* 자식 요소들을 가로로 중앙 정렬 */
+}
+
+
+
+
+
+
+
+.section03{
+    position: relative;
+    height: 2401px;
+}
+
+
+.section03_text{
+    position: absolute;
+    top: 79.7%;
+    left: 16%;
+}
+
+
+
+.section04{
+    position: relative;
+    height: 6803px;
+}
+
+
+.section04 .text_line{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    translate:-50% -50%;
+}
+
+
+.section04 .text_copy{
+    position: absolute;
+    left: 65.7vw;
+    top: 92.3vw;
+    img{
+        width: 100%;
+    }
+}
+
+
+.section04 .tape{
+    position: absolute;
+    right: 3.6vw;
+    top: 131.7vw;
+    img{
+        width: 100%;
+    }
+}
+
+
+.section04 .tape_line{
+    position: absolute;
+    left: -11.8vw;
+    top: 154.5vw;
+    img{
+        width: 100%;
+    }
+}
+
+
+.section04 .text_number{
+    position: absolute;
+    right: 5.8vw;
+    bottom: 22.1vw;
+    img{
+        width: 100%;
+    }
+}
+
+
+.section05{
+    position: relative;
+    height: 1608px;
+}
+
+
+.section05 .img_left{
+    position: absolute;
+    left: -3.2vw;
+    top: 23.3vw;
+    img{
+        width: 100%;
+    }
+}
+
+
+.section05 .img_right{
+    position: absolute;
+    right: -3.4vw;
+    top: 48.4vw;
+    img{
+        width: 100%;
+    }
+}
+
+.section06{
+    position: relative;
 }
