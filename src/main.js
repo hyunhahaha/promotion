@@ -110,7 +110,7 @@ ScrollTrigger.create({
 //컨셉박스
 const 컨셉박스 = gsap.timeline();
 
-컨셉박스.from('.key',{stagger:0.1,opacity:0})
+컨셉박스.from('.key',{stagger:0.1,y:40,opacity:0})
 
 ScrollTrigger.create({
   trigger: ".section02",

@@ -189,22 +189,25 @@
 }
 
 
-.section04 .text_line{
+.text_line{
     position: absolute;
     left: 50%;
-    top: 3%;
-    translate:-50% -50%;
+    top: 3.5%;
+    transform: translateX(-50%);
+    img{
+        width: inherit;
+    }
 }
 
 
-.section04 .text_copy{
+/* .section04 .text_copy{
     position: absolute;
     left: 65.7vw;
     top: 92.3vw;
     img{
         width: 100%;
     }
-}
+} */
 
 
 .section04 .tape{
