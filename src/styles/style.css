@@ -87,7 +87,7 @@
     top: 74vw;
     background-color: #64d880;
     width: 0;  /* 초기 width */
-    height: 27.3px;  /* 초기 height */
+    height: 1.4vw;  /* 초기 height */
     transition: width 1s ease;  /* width 애니메이션 */
 }
 
@@ -190,7 +190,7 @@
 
 
 .text_line{
-    width: 1372px;
+    width: 1397px;
     overflow: hidden;
     position: absolute;
     left: 50%;
@@ -217,7 +217,7 @@
         transform:translateY(0)
     }
     to{
-        transform:translateY(-20px)
+        transform:translateY(-40px)
     }
 }
 
@@ -226,7 +226,7 @@
     position: absolute;
     right: 3.6vw;
     top: 131.7vw;
-    animation: dongdong 2s infinite alternate;
+    animation: dongdong 1.8s infinite alternate;
     img{
         width: 100%;
     }
@@ -234,7 +234,7 @@
 
 
 .section04 .tape_line{
-    animation: dongdong 1.5s infinite alternate;
+    animation: dongdong 1.3s infinite alternate;
     position: absolute;
     left: -11.8vw;
     top: 154.5vw;
@@ -244,14 +244,16 @@
 }
 
 
-.section04 .text_number{
+.text_number{
+    overflow: hidden;
+    width: 0;
     position: absolute;
-    right: 5.8vw;
-    bottom: 22.1vw;
-    img{
-        width: 100%;
-    }
+    left: 25.8vw;
+    bottom: 14.1vw;
+    height: 20vw;
+    transition: width 1s ease;
 }
+
 
 
 .section05{
@@ -261,22 +263,22 @@
 
 
 .section05 .img_left{
+    overflow: hidden;
+    width: 0;
     position: absolute;
     left: -3.2vw;
-    top: 23.3vw;
-    img{
-        width: 100%;
-    }
+    bottom: 41.7vw;
+    transition: width 1s ease;
 }
 
 
 .section05 .img_right{
+    overflow: hidden;
+    width: 0;
     position: absolute;
-    right: -3.4vw;
-    top: 48.4vw;
-    img{
-        width: 100%;
-    }
+    right: -4.2vw;
+    bottom: 16.7vw;
+    transition: width 1s ease;
 }
 
 .section06{

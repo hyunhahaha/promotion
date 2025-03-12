@@ -43,7 +43,7 @@ gsap.registerPlugin(ScrollTrigger);
 //최상단 텍스트
 const 섹션1 = gsap.timeline();
 
-섹션1.from('.t_boxes',{y:50,opacity:0})
+섹션1.from('.t_boxes',{y:70,opacity:0})
 
 
 ScrollTrigger.create({
@@ -79,7 +79,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: ".section01",
   start: "660px top",  // 스크롤 시작 위치
-  end: "1000px top",  // 끝 위치
+  end: "900px top",  // 끝 위치
   // markers:true,
   animation: gsap.to('.loading_box', { 
     width: 169,             // 로딩 박스의 스케일을 1로 설정
@@ -99,7 +99,7 @@ const 현하 = gsap.timeline();
 ScrollTrigger.create({
   trigger: ".section02",
   start: "top top",  // 스크롤 시작 위치
-  end: "500px center",  // 끝 위치
+  end: "1400px center",  // 끝 위치
   // markers:true,
   animation: 현하,
   scrub: 1,
@@ -139,6 +139,51 @@ ScrollTrigger.create({
 
 
 
+
+//밀면서 나오는 구동
+ScrollTrigger.create({
+  trigger: ".section04",
+  start: "5500px top",  // 스크롤 시작 위치
+  end: "6000px center",  // 끝 위치
+  // markers:true,
+  animation: gsap.to('.number4', { 
+    width: 1309,          // 로딩 박스의 스케일을 1로 설정
+    ease: "none",          // 애니메이션 속도
+  }),
+  scrub: true,
+});
+
+
+
+
+//이미지 왼쪽에서 밀어서 나오는 구동
+ScrollTrigger.create({
+  trigger: ".section05",
+  start: "-200px top",  // 스크롤 시작 위치
+  end: "200px center",  // 끝 위치
+  markers:true,
+  animation: gsap.to('.left', { 
+    width: 1454,
+    ease: "none",          // 애니메이션 속도
+  }),
+  scrub: true,
+});
+
+
+
+
+//이미지 오른쪽에서 밀어서 나오는 구동
+ScrollTrigger.create({
+  trigger: ".section05",
+  start: "-200px top",  // 스크롤 시작 위치
+  end: "200px center",  // 끝 위치
+  markers:true,
+  animation: gsap.to('.right', { 
+    width: 1454,
+    ease: "none",          // 애니메이션 속도
+  }),
+  scrub: true,
+});
 
 
 
