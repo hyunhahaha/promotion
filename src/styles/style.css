@@ -190,12 +190,14 @@
 
 
 .text_line{
+    width: 1372px;
+    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 3.5%;
     transform: translateX(-50%);
     img{
-        width: inherit;
+        width: initial;
     }
 }
 
@@ -210,10 +212,21 @@
 } */
 
 
+@keyframes dongdong {
+    from{
+        transform:translateY(0)
+    }
+    to{
+        transform:translateY(-20px)
+    }
+}
+
+
 .section04 .tape{
     position: absolute;
     right: 3.6vw;
     top: 131.7vw;
+    animation: dongdong 2s infinite alternate;
     img{
         width: 100%;
     }
@@ -221,6 +234,7 @@
 
 
 .section04 .tape_line{
+    animation: dongdong 1.5s infinite alternate;
     position: absolute;
     left: -11.8vw;
     top: 154.5vw;

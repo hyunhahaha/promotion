@@ -102,7 +102,7 @@ ScrollTrigger.create({
   end: "500px center",  // 끝 위치
   // markers:true,
   animation: 현하,
-  scrub: 8,
+  scrub: 1,
 });
 
 
@@ -132,7 +132,7 @@ ScrollTrigger.create({
   trigger: ".section03",
   start: "1200px top",  // 스크롤 시작 위치
   end: "1600px center",  // 끝 위치
-  markers:true,
+  // markers:true,
   animation: 섹션3,
   scrub: 8,
 });
