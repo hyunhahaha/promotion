@@ -12,7 +12,7 @@
 
 
   .section01{
-    height: 3300px;
+    height: 100%;
     background-color: black;
   }
 
@@ -118,50 +118,63 @@
 
 
 
-.section02_container .bg_full_2{
-    position: relative;
-}
-
-
-
 .section02{
     position: relative;
-    height: 2330px;
+    height: 100%;
+
+    /* img{
+        width: 100%;
+    } */
 }
+
+
+
+.section02_container .bg_full_2{
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+}
+
 
 
 
 .box_container{
     display: flex;
-    gap: 70px;
+    gap: 38px;
     position: absolute;
     left: 50%;
-    top: 31.1%;
-    translate:-50% -50%;
-
+    top: 25.5%;
+    translate:-50% 0%;
 }
+
 
 
 .solution_container{
     display: flex;
-    gap: 70px;
+    gap: 38px;
     position: absolute;
     left: 50%;
-    top: 49.4%;
-    translate:-50% -50%;
+    top: 39.4%;
+    translate:-50% 0%;
 }
+
+
+.s_boxes{
+    padding: 4.5px;
+}
+
+
 
 
 .concept_container{
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
     position: absolute;
     left: 50%;
-    top: 86.3%;
-    transform: translate(-50%, -50%); /* 정확히 중앙에 배치 */
-    align-items: center; /* 자식 요소들을 가로로 중앙 정렬 */
+    top: 80%;
+    transform: translate(-50%, 0%); /* 정확히 중앙에 배치 */
 }
+
 
 
 
@@ -171,7 +184,12 @@
 
 .section03{
     position: relative;
-    height: 2401px;
+    height: 100%;
+
+
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -185,7 +203,12 @@
 
 .section04{
     position: relative;
-    height: 6803px;
+    height: 100%;
+
+
+    img{
+        width: 100%;
+    }
 }
 
 @keyframes move {
@@ -253,7 +276,7 @@
 }
 
 
-.text_number{
+/* .text_number{
     overflow: hidden;
     width: 0;
     position: absolute;
@@ -261,35 +284,67 @@
     bottom: 14.1vw;
     height: 20vw;
     transition: width 1s ease;
-}
+} */
 
+
+.text_number {
+    overflow: hidden;
+    width: 1309px;  /* 전체 너비 설정 */
+    position: absolute;
+    left: 25.8vw;
+    bottom: 14.1vw;
+    height: 20vw;
+    clip-path: inset(0 100% 0 0);  /* 오른쪽에서부터 숨김 */
+    transition: clip-path 1s ease; /* clip-path에 애니메이션 적용 */
+}
 
 
 .section05{
     position: relative;
-    height: 1608px;
+    height: 100%;
+    img{
+        width: 100%;
+    }
 }
 
 
-.section05 .img_left{
+/* .section05 .img_left{
     overflow: hidden;
     width: 0;
     position: absolute;
     left: -3.2vw;
     bottom: 41.7vw;
     transition: width 1s ease;
+} */
+
+
+.section05 .img_left {
+    overflow: hidden;
+    position: absolute;
+    left: -3.2vw;
+    bottom: 41.7vw;
+    height: 20vw;  /* 높이는 필요에 따라 조정 */
+    clip-path: inset(0 100% 0 0);  /* 왼쪽을 100% 숨기고, 오른쪽으로 애니메이션을 적용 */
+    transition: clip-path 1s ease;  /* clip-path 애니메이션 */
 }
 
 
-.section05 .img_right{
+
+.section05 .img_right {
     overflow: hidden;
-    width: 0;
     position: absolute;
     right: -4.2vw;
     bottom: 16.7vw;
-    transition: width 1s ease;
+    height: 20vw;  /* 높이는 필요에 따라 조정 */
+    clip-path: inset(0 0 0 100%);  /* 오른쪽을 100% 숨기고, 왼쪽에서부터 애니메이션을 적용 */
+    transition: clip-path 1s ease;  /* clip-path 애니메이션 */
 }
 
+
+
 .section06{
-    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+    }
 }
