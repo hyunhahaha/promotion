@@ -99,7 +99,7 @@ const 현하 = gsap.timeline();
 ScrollTrigger.create({
   trigger: ".section02",
   start: "top top",  // 스크롤 시작 위치
-  end: "1400px center",  // 끝 위치
+  end: "1100px center",  // 끝 위치
   // markers:true,
   animation: 현하,
   scrub: 1,
