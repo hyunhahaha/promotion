@@ -142,13 +142,13 @@ ScrollTrigger.create({
 
 //밀면서 나오는 구동
 ScrollTrigger.create({
-  trigger: ".section04",
-  start: "5500px top",  // 스크롤 시작 위치
-  end: "6000px center",  // 끝 위치
-  // markers:true,
+  trigger: ".number4",
+  start: "top center",  // 스크롤 시작 위치
+  end: "bottom center",  // 끝 위치
+  markers:true,
   animation: gsap.to('.number4', { 
     width: 1309,          // 로딩 박스의 스케일을 1로 설정
-    ease: "none",          // 애니메이션 속도
+    ease: "none",          // 애니메이션 가속도
   }),
   scrub: true,
 });
@@ -161,7 +161,7 @@ ScrollTrigger.create({
   trigger: ".section05",
   start: "-200px top",  // 스크롤 시작 위치
   end: "200px center",  // 끝 위치
-  markers:true,
+  // markers:true,
   animation: gsap.to('.left', { 
     width: 1454,
     ease: "none",          // 애니메이션 속도
@@ -177,7 +177,7 @@ ScrollTrigger.create({
   trigger: ".section05",
   start: "-200px top",  // 스크롤 시작 위치
   end: "200px center",  // 끝 위치
-  markers:true,
+  // markers:true,
   animation: gsap.to('.right', { 
     width: 1454,
     ease: "none",          // 애니메이션 속도

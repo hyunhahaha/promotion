@@ -188,9 +188,17 @@
     height: 6803px;
 }
 
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-234.5px);
+    }
+}
 
 .text_line{
-    width: 1397px;
+    width: 1375px;
     overflow: hidden;
     position: absolute;
     left: 50%;
@@ -198,6 +206,7 @@
     transform: translateX(-50%);
     img{
         width: initial;
+        animation: move 2s infinite linear
     }
 }
 
