@@ -145,9 +145,10 @@
     gap: 38px;
     position: absolute;
     left: 50%;
-    top: 25.5%;
+    top: 25.5vw;
     translate:-50% 0%;
 }
+
 
 
 
@@ -158,12 +159,12 @@
     left: 50%;
     top: 39.4%;
     translate:-50% 0%;
+
+    img{
+        height: 100%;
+    }
 }
 
-
-.s_boxes{
-    padding: 4.5px;
-}
 
 
 
@@ -202,6 +203,7 @@
 
 
 .section04{
+    background-color: #191919;
     position: relative;
     height: 100%;
 
@@ -300,6 +302,7 @@
 
 
 .section05{
+    background-color: #191919;
     position: relative;
     height: 100%;
     img{

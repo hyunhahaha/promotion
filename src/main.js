@@ -82,7 +82,7 @@ ScrollTrigger.create({
   end: "900px top",  // 끝 위치
   // markers:true,
   animation: gsap.to('.loading_box', { 
-    width: 149,             // 로딩 박스의 스케일을 1로 설정
+    width: 135,             // 로딩 박스의 스케일을 1로 설정
     ease: "none",          // 애니메이션 속도
   }),
   scrub: true,
