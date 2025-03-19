@@ -3,238 +3,218 @@
   }
    */
 
-
-  body {
-    overflow: hidden;
+@keyframes blink {
+  from {
+    opacity: 0;
   }
-
-
-
-
-  .section01{
-    height: 100%;
-    background-color: black;
+  to {
+    opacity: 1;
   }
-
-
-  
-
-.section01_container .bg_full{
-    position: relative;
-
-    img{
-        width: 100%;
-    }
 }
 
-.section01_container .text_01{
-    position: absolute;
-    left: 60.4vw;
-    top: 9.5vw;
-    width: 29vw;
-    /* opacity: 0;
+body {
+  overflow: hidden;
+  /* animation: blink 0.3s infinite alternate; */
+}
+
+.section01 {
+  height: 100%;
+  background-color: black;
+}
+
+.section01_container .bg_full {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.section01_container .text_01 {
+  position: absolute;
+  left: 60.4vw;
+  top: 9.5vw;
+  width: 29vw;
+  /* opacity: 0;
     visibility: hidden;
     z-index: 10; */
-    img{
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
-.section01_container .text_02{
-    position: absolute;
-    left: 51.2vw;
-    top: 27.3vw;
-    width: 20.5vw;
-    img{
-        width: 100%;
-    }
+.section01_container .text_02 {
+  position: absolute;
+  left: 51.2vw;
+  top: 27.3vw;
+  width: 20.5vw;
+  img {
+    width: 100%;
+  }
 }
 
-.section01_container .text_03{
-    position: absolute;
-    left: 6.1vw;
-    top: 28.8vw;
-    width: 17vw;
-    img{
-        width: 100%;
-    }
+.section01_container .text_03 {
+  position: absolute;
+  left: 6.1vw;
+  top: 28.8vw;
+  width: 17vw;
+  img {
+    width: 100%;
+  }
 }
 
-.section01_container .text_04{
-    position: absolute;
-    left: 71.2vw;
-    top: 35.7vw;
-    width: 22vw;
-    img{
-        width: 100%;
-    }
+.section01_container .text_04 {
+  position: absolute;
+  left: 71.2vw;
+  top: 35.7vw;
+  width: 22vw;
+  img {
+    width: 100%;
+  }
 }
 
-.section01_container .loading{
-    position: absolute;
-    left: 55vw;
-    top: 68.7vw;
-    width: 13.5vw;
-    img{
-        width: 100%;
-    }
+.section01_container .loading {
+  position: absolute;
+  left: 55vw;
+  top: 68.7vw;
+  width: 13.5vw;
+  img {
+    width: 100%;
+  }
 }
-
 
 .loading_box {
-    position: absolute;
-    left: 56.9vw;
-    top: 74vw;
-    background-color: #64d880;
-    width: 0;  /* 초기 width */
-    height: 1.4vw;  /* 초기 height */
-    transition: width 1s ease;  /* width 애니메이션 */
+  position: absolute;
+  left: 56.9vw;
+  top: 74vw;
+  background-color: #64d880;
+  width: 0; /* 초기 width */
+  height: 1.4vw; /* 초기 height */
+  transition: width 1s ease; /* width 애니메이션 */
 }
 
-
-.phone_01{
-    position: absolute;
-    left: -5.6vw;
-    top: 94.7vw;
-    width: 41vw;
-    img{
-        width: 100%;
-    }
+.phone_01 {
+  position: absolute;
+  left: -5.6vw;
+  top: 94.7vw;
+  width: 41vw;
+  img {
+    width: 100%;
+  }
 }
 
-
-.phone_02{
-    position: absolute;
-    right: -0.6vw;
-    top: 125vw;
-    width: 35vw;
-    img{
-        width: 100%;
-    }
+.phone_02 {
+  position: absolute;
+  right: -0.6vw;
+  top: 125vw;
+  width: 35vw;
+  img {
+    width: 100%;
+  }
 }
 
+.section02 {
+  position: relative;
+  height: 100%;
 
-
-
-
-
-.section02{
-    position: relative;
-    height: 100%;
-
-    /* img{
+  /* img{
         width: 100%;
     } */
 }
 
+.section02_container .bg_full_2 {
+  position: relative;
 
+  img {
+    width: 100%;
+  }
+}
 
-.section02_container .bg_full_2{
-    position: relative;
+.box_container {
+  display: flex;
+  gap: 38px;
+  position: absolute;
+  left: 50%;
+  top: 25.5vw;
+  width: 80vw;
+  translate: -50% 0%;
 
-    img{
-        width: 100%;
+  > div {
+    flex: 1;
+    min-width: 347px;
+
+    & img {
+      width: 100%;
     }
+  }
 }
 
+.solution_container {
+  display: flex;
+  gap: 38px;
+  position: absolute;
+  left: 50%;
+  top: 39.4%;
+  translate: -50% 0%;
 
-
-
-.box_container{
-    display: flex;
-    gap: 38px;
-    position: absolute;
-    left: 50%;
-    top: 25.5vw;
-    translate:-50% 0%;
-}
-
-
-
-
-.solution_container{
-    display: flex;
-    gap: 38px;
-    position: absolute;
-    left: 50%;
-    top: 39.4%;
-    translate:-50% 0%;
-
-    img{
-        height: 100%;
-    }
-}
-
-
-
-
-
-.concept_container{
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, 0%); /* 정확히 중앙에 배치 */
-}
-
-
-
-
-
-
-
-
-.section03{
-    position: relative;
+  img {
     height: 100%;
-
-
-    img{
-        width: 100%;
-    }
+  }
 }
 
-
-.section03_text{
-    position: absolute;
-    top: 79.7%;
-    left: 16%;
+.concept_container {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, 0%); /* 정확히 중앙에 배치 */
 }
 
+.section03 {
+  position: relative;
+  height: 100%;
 
+  img {
+    width: 100%;
+  }
+}
 
-.section04{
-    background-color: #191919;
-    position: relative;
-    height: 100%;
+.section03_text {
+  position: absolute;
+  top: 79.7%;
+  left: 16%;
+}
 
+.section04 {
+  background-color: #191919;
+  position: relative;
+  height: 100%;
 
-    img{
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 @keyframes move {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-234.5px);
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-234.5px);
+  }
 }
 
-.text_line{
-    width: 1375px;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 3.5%;
-    transform: translateX(-50%);
-    img{
-        width: initial;
-        animation: move 2s infinite linear
-    }
+.text_line {
+  width: 1375px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 3.5%;
+  transform: translateX(-50%);
+  img {
+    width: initial;
+    animation: move 2s infinite linear;
+  }
 }
-
 
 /* .section04 .text_copy{
     position: absolute;
@@ -245,38 +225,34 @@
     }
 } */
 
-
 @keyframes dongdong {
-    from{
-        transform:translateY(0)
-    }
-    to{
-        transform:translateY(-40px)
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40px);
+  }
 }
 
-
-.section04 .tape{
-    position: absolute;
-    right: 3.6vw;
-    top: 131.7vw;
-    animation: dongdong 1.8s infinite alternate;
-    img{
-        width: 100%;
-    }
+.section04 .tape {
+  position: absolute;
+  right: 3.6vw;
+  top: 131.7vw;
+  animation: dongdong 1.8s infinite alternate;
+  img {
+    width: 100%;
+  }
 }
 
-
-.section04 .tape_line{
-    animation: dongdong 1.3s infinite alternate;
-    position: absolute;
-    left: -11.8vw;
-    top: 154.5vw;
-    img{
-        width: 100%;
-    }
+.section04 .tape_line {
+  animation: dongdong 1.3s infinite alternate;
+  position: absolute;
+  left: -11.8vw;
+  top: 154.5vw;
+  img {
+    width: 100%;
+  }
 }
-
 
 /* .text_number{
     overflow: hidden;
@@ -288,28 +264,25 @@
     transition: width 1s ease;
 } */
 
-
 .text_number {
-    overflow: hidden;
-    width: 1309px;  /* 전체 너비 설정 */
-    position: absolute;
-    left: 25.8vw;
-    bottom: 14.1vw;
-    height: 20vw;
-    clip-path: inset(0 100% 0 0);  /* 오른쪽에서부터 숨김 */
-    transition: clip-path 1s ease; /* clip-path에 애니메이션 적용 */
+  overflow: hidden;
+  width: 1309px; /* 전체 너비 설정 */
+  position: absolute;
+  left: 25.8vw;
+  bottom: 14.1vw;
+  height: 20vw;
+  clip-path: inset(0 100% 0 0); /* 오른쪽에서부터 숨김 */
+  transition: clip-path 1s ease; /* clip-path에 애니메이션 적용 */
 }
 
-
-.section05{
-    background-color: #191919;
-    position: relative;
-    height: 100%;
-    img{
-        width: 100%;
-    }
+.section05 {
+  background-color: #191919;
+  position: relative;
+  height: 100%;
+  img {
+    width: 100%;
+  }
 }
-
 
 /* .section05 .img_left{
     overflow: hidden;
@@ -320,34 +293,33 @@
     transition: width 1s ease;
 } */
 
-
 .section05 .img_left {
-    overflow: hidden;
-    position: absolute;
-    left: -3.2vw;
-    bottom: 41.7vw;
-    height: 20vw;  /* 높이는 필요에 따라 조정 */
-    clip-path: inset(0 100% 0 0);  /* 왼쪽을 100% 숨기고, 오른쪽으로 애니메이션을 적용 */
-    transition: clip-path 1s ease;  /* clip-path 애니메이션 */
+  overflow: hidden;
+  position: absolute;
+  left: -3.2vw;
+  bottom: 41.7vw;
+  height: 20vw; /* 높이는 필요에 따라 조정 */
+  clip-path: inset(
+    0 100% 0 0
+  ); /* 왼쪽을 100% 숨기고, 오른쪽으로 애니메이션을 적용 */
+  transition: clip-path 1s ease; /* clip-path 애니메이션 */
 }
-
-
 
 .section05 .img_right {
-    overflow: hidden;
-    position: absolute;
-    right: -4.2vw;
-    bottom: 16.7vw;
-    height: 20vw;  /* 높이는 필요에 따라 조정 */
-    clip-path: inset(0 0 0 100%);  /* 오른쪽을 100% 숨기고, 왼쪽에서부터 애니메이션을 적용 */
-    transition: clip-path 1s ease;  /* clip-path 애니메이션 */
+  overflow: hidden;
+  position: absolute;
+  right: -4.2vw;
+  bottom: 16.7vw;
+  height: 20vw; /* 높이는 필요에 따라 조정 */
+  clip-path: inset(
+    0 0 0 100%
+  ); /* 오른쪽을 100% 숨기고, 왼쪽에서부터 애니메이션을 적용 */
+  transition: clip-path 1s ease; /* clip-path 애니메이션 */
 }
 
-
-
-.section06{
+.section06 {
+  width: 100%;
+  img {
     width: 100%;
-    img{
-        width: 100%;
-    }
+  }
 }
