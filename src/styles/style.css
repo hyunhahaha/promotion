@@ -135,13 +135,13 @@ body {
   gap: 38px;
   position: absolute;
   left: 50%;
-  top: 25.5vw;
+  top: 31.7vw;
   width: 80vw;
   translate: -50% 0%;
 
   > div {
     flex: 1;
-    min-width: 347px;
+    min-width: 200px;
 
     & img {
       width: 100%;
@@ -154,19 +154,35 @@ body {
   gap: 38px;
   position: absolute;
   left: 50%;
-  top: 39.4%;
+  top: 45.5vw;
+  width: 80vw;
   translate: -50% 0%;
 
-  img {
-    height: 100%;
+  > div {
+    flex: 1;
+    min-width: 200px;
+
+    & img {
+      width: 100%;
+    }
   }
 }
 
 .concept_container {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 99.3vw;
   transform: translate(-50%, 0%); /* 정확히 중앙에 배치 */
+  width: 45vw;
+
+  > div {
+    flex: 1;
+    min-width: 200px;
+
+    & img {
+      width: 100%;
+    }
+  }
 }
 
 .section03 {
@@ -204,12 +220,12 @@ body {
 }
 
 .text_line {
-  width: 1375px;
+  width: 71.5vw;
   overflow: hidden;
   position: absolute;
-  left: 50%;
-  top: 3.5%;
-  transform: translateX(-50%);
+  left: 50vw;
+  top: 12.5vw;
+  transform: translateX(-35.9vw);
   img {
     width: initial;
     animation: move 2s infinite linear;
@@ -236,22 +252,19 @@ body {
 
 .section04 .tape {
   position: absolute;
-  right: 3.6vw;
+  right: 5vw;
   top: 131.7vw;
   animation: dongdong 1.8s infinite alternate;
-  img {
-    width: 100%;
-  }
+  width: 19.5vw;
 }
 
 .section04 .tape_line {
   animation: dongdong 1.3s infinite alternate;
   position: absolute;
-  left: -11.8vw;
-  top: 154.5vw;
-  img {
-    width: 100%;
-  }
+  left: -14.8vw;
+  top: 152.5vw;
+  width: 50vw;
+
 }
 
 /* .text_number{
@@ -266,10 +279,10 @@ body {
 
 .text_number {
   overflow: hidden;
-  width: 1309px; /* 전체 너비 설정 */
+  width: 68vw;
   position: absolute;
-  left: 25.8vw;
-  bottom: 14.1vw;
+  left: 25.2vw;
+  bottom: 8.9vw;
   height: 20vw;
   clip-path: inset(0 100% 0 0); /* 오른쪽에서부터 숨김 */
   transition: clip-path 1s ease; /* clip-path에 애니메이션 적용 */
@@ -297,8 +310,9 @@ body {
   overflow: hidden;
   position: absolute;
   left: -3.2vw;
-  bottom: 41.7vw;
+  bottom: 40.7vw;
   height: 20vw; /* 높이는 필요에 따라 조정 */
+  width: 76vw;
   clip-path: inset(
     0 100% 0 0
   ); /* 왼쪽을 100% 숨기고, 오른쪽으로 애니메이션을 적용 */
@@ -308,9 +322,10 @@ body {
 .section05 .img_right {
   overflow: hidden;
   position: absolute;
-  right: -4.2vw;
-  bottom: 16.7vw;
-  height: 20vw; /* 높이는 필요에 따라 조정 */
+  right: -3.2vw;
+  bottom: 16vw;
+  height: 20vw;
+  width: 76vw;
   clip-path: inset(
     0 0 0 100%
   ); /* 오른쪽을 100% 숨기고, 왼쪽에서부터 애니메이션을 적용 */
