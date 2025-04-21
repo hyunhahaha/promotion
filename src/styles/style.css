@@ -1,7 +1,7 @@
-/* img{
-    width: 100%;
+img{
+  display: block;
   }
-   */
+  
 
 @keyframes blink {
   from {

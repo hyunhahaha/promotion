@@ -43,8 +43,8 @@ const 섹션1 = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "top top", // 스크롤 시작 위치
-  end: "800px center", // 끝 위치
+  start: "top top",
+  end: "800px center",
   // markers:true,
   animation: 섹션1,
   scrub: true,
@@ -58,8 +58,8 @@ p_box.from(".p_boxes2", { y: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "1800px top", // 스크롤 시작 위치
-  end: "3000px center", // 끝 위치
+  start: "1800px top",
+  end: "3000px center",
   // markers:true,
   animation: p_box,
   scrub: true,
@@ -68,8 +68,8 @@ ScrollTrigger.create({
 //로딩박스
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "660px top", // 스크롤 시작 위치
-  end: "700px top", // 끝 위치
+  start: "660px top",
+  end: "700px top",
   // markers:true,
   animation: gsap.to(".loading_box", {
     width: "8.9vw", // 로딩 박스의 스케일을 1로 설정
@@ -86,8 +86,8 @@ const 현하 = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: ".section02",
-  start: "top top", // 스크롤 시작 위치
-  end: "1100px center", // 끝 위치
+  start: "top top",
+  end: "1100px center",
   // markers:true,
   animation: 현하,
   scrub: 1,
@@ -101,8 +101,8 @@ const 컨셉박스 = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: ".section02",
-  start: "1500px center", // 스크롤 시작 위치
-  end: "1550px center", // 끝 위치
+  start: "1500px center",
+  end: "1550px center",
   // markers:true,
   animation: 컨셉박스,
   scrub: 8,
@@ -115,8 +115,8 @@ const 섹션3 = gsap.timeline();
 
 ScrollTrigger.create({
   trigger: ".section03",
-  start: "1400px top", // 스크롤 시작 위치
-  end: "1800px center", // 끝 위치
+  start: "1400px top",
+  end: "1800px center",
   markers:true,
   animation: 섹션3,
   scrub: 8,
@@ -127,8 +127,8 @@ ScrollTrigger.create({
 // 밀면서 나오는 구동
 ScrollTrigger.create({
   trigger: ".number4",
-  start: "-100px center", // 스크롤 시작 위치
-  end: "-100px center", // 끝 위치
+  start: "-100px center",
+  end: "-100px center",
   // markers:true,
   animation: gsap.to(".number4", {
     clipPath: "inset(0 0 0 0)", // clip-path를 100%에서 0%로 변환하여 오른쪽에서부터 닦아내듯이 나타나게 함
@@ -140,8 +140,8 @@ ScrollTrigger.create({
 // 이미지 왼쪽에서 밀어서 나오는 구동
 ScrollTrigger.create({
   trigger: ".section05",
-  start: "-200px center", // 스크롤 시작 위치
-  end: "200px center", // 끝 위치
+  start: "-200px center",
+  end: "200px center",
   // markers:true,
   animation: gsap.to(".img_left", {
     clipPath: "inset(0 0 0 0)", // 왼쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
@@ -153,8 +153,8 @@ ScrollTrigger.create({
 // 이미지 오른쪽에서 밀어서 나오는 구동
 ScrollTrigger.create({
   trigger: ".section05",
-  start: "-200px top", // 스크롤 시작 위치
-  end: "200px center", // 끝 위치
+  start: "-200px top",
+  end: "200px center",
   // markers:true,
   animation: gsap.to(".img_right", {
     clipPath: "inset(0 0 0 0)", // 오른쪽에서부터 100%가 0%로 변하면서 나타나도록 설정
