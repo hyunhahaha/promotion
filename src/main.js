@@ -57,12 +57,12 @@ p_box.from(".p_boxes1", { y: 40, opacity: 0, duration: 0.1 });
 p_box.from(".p_boxes2", { y: 40, opacity: 0, duration: 0.1 });
 
 ScrollTrigger.create({
-  trigger: ".section01",
-  start: "1200px top",
-  end: "2800px center",
+  trigger: ".bg_full_2",
+  start: "top center",
+  end: "400px center",
   // markers:true,
   animation: p_box,
-  scrub: 3,
+  scrub: 5,
 });
 
 //로딩박스
