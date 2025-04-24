@@ -47,22 +47,22 @@ ScrollTrigger.create({
   end: "800px center",
   // markers:true,
   animation: 섹션1,
-  scrub: true,
+  scrub: 2,
 });
 
 //phone
 const p_box = gsap.timeline();
 
-p_box.from(".p_boxes1", { y: 50, opacity: 0 });
-p_box.from(".p_boxes2", { y: 50, opacity: 0 });
+p_box.from(".p_boxes1", { y: 40, opacity: 0, duration: 0.1 });
+p_box.from(".p_boxes2", { y: 40, opacity: 0, duration: 0.1 });
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "1800px top",
-  end: "3000px center",
+  start: "1200px top",
+  end: "2800px center",
   // markers:true,
   animation: p_box,
-  scrub: true,
+  scrub: 3,
 });
 
 //로딩박스
@@ -117,7 +117,7 @@ ScrollTrigger.create({
   trigger: ".section03",
   start: "1400px top",
   end: "1800px center",
-  markers:true,
+  // markers:true,
   animation: 섹션3,
   scrub: 8,
 });
