@@ -44,7 +44,7 @@ a:hover {
   display: flex; /* Flexbox 활성화 */
   justify-content: space-between; /* 좌우 끝으로 요소 배치 */
   background-color: #030303;
-  padding: 30px 50px 10px 50px;
+  padding: 30px 50px 15px 50px;
   list-style: none; /* 기본 리스트 스타일 제거 */
   text-align: center;
 }
